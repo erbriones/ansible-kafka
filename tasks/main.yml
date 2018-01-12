@@ -33,7 +33,7 @@
     - reload systemd
     - restart kafka
 
-- name: Add Kafka to users enivronment path
+- name: Add Kafka to users environment path
   copy: content="export PATH=/opt/kafka/bin:$PATH" dest=/etc/profile.d/kafka.sh
 
 - name: Start Kafka service
