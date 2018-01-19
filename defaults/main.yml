@@ -3,6 +3,8 @@ kafka_mirror: http://apache.osuosl.org
 kafka_version: 1.0.0
 kafka_user: kafka
 kafka_group: kafka
+kafka_log_dirs:
+    - /tmp/kafka-logs
 kafka_environment:
     - KAFKA_HEAP_OPTS=-Xmx512m -Xms512m
     - KAFKA_JVM_PERFORMANCE_OPTS=-XX:MetaspaceSize=96m -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:G1HeapRegionSize=16M -XX:MinMetaspaceFreeRatio=50 -XX:MaxMetaspaceFreeRatio=80
